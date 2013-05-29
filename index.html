@@ -1,0 +1,62 @@
+	<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>Forms</title>
+		<link rel="stylesheet" href="css/foundation.css" />
+	</head>
+	<body>
+		<form method="post" action="FormToEmail.php">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1>Contact Me</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="name" class="right inline">Name</label> 
+				</div>
+				<div class="small-9 columns">
+					<input type="text" placeholder="Name" name="name" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="email" class="right inline">Email</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="email" placeholder="Email" name="email" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="tel" class="right inline">Telephone</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="tel" placeholder="Phone Number" name="phone" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="urgency" class="right inline">Urgency</label>
+				</div>
+				<div class="small-9 columns">
+					<select name="urgency">
+						<option value="urgent">Right now</option>
+						<option value="normal">Soon</option>
+						<option value="not">Someday</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="urgency" class="right inline">Message</label>
+				</div>
+				<div class="small-9 columns">
+					<textarea placeholder="Type your message here" name="message"></textarea>
+				<input type="submit" value="Send Message" />
+				</div>
+			</div>
+		</form>
+	</body>
+	</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Forms</title>
+	<!-- <link rel="stylesheet" href="css/foundation.css" /> -->
+</head>
+<body>
+
+<form method="get" action="http://jeremiahlee.com/contact.php">
+	<input type="text" placeholder="Generic Text" />
+	<input type="search" placeholder="Search" />
+	<input type="email" placeholder="hello@jeremiahlee.com" />
+	<input type="tel" placeholder="415-555-1234" />
+
+	<textarea placeholder="Write a bio..."></textarea>
+
+	<select multiple>
+		<option value="CA">California</option>
+		<option value="MA" selected>Massachusetts</option>
+		<option value="VA">Virginia</option>
+	</select>
+
+	<label for="station1">Station 1</label>
+	<input type="radio" name="station" id="station1" checked />
+	
+	<label>
+		Station 2
+		<input type="radio" name="station" id="station2" />
+	</label>
+
+	<input type="checkbox" name="flavors[]" checked/>
+
+	<fieldset>
+		<legend>Fieldset</legend>
+		<input type="text" placeholder="Field 1" /><br />
+		<input type="text" placeholder="Field 2" /><br />
+		<input type="text" placeholder="Field 3" />
+	</fieldset>
+
+	<input type="button" value="button" />
+	<!-- <button></button> -->
+	<input type="submit" />
+	<input type="reset" />
+
+</form>
+
+</body>
+</html>

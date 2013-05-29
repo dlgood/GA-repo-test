@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Forms</title>
+	<link rel="stylesheet" href="css/foundation.css" />
+</head>
+<body>
+
+<form method="post" action="http://jeremiahlee.com/contact/FormToEmail.php">
+	<div class="row">
+		<div class="small-12 columns">
+			<h1>Contact Me</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="small-3 columns">
+			<label for="name" class="right inline">Name</label>
+		</div>
+		<div class="small-9 columns">
+			<input type="text" id="name" name="name" placeholder="Paul Bunyan" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-3 columns">
+			<label for="email" class="right inline">Email</label>
+		</div>
+		<div class="small-9 columns">
+			<input type="email" id="email" name="email" placeholder="paul@bunyan.com" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-3 columns">
+			<label for="phone" class="right inline">Phone</label>
+		</div>
+		<div class="small-9 columns">
+			<input type="tel" id="phone" name="phone" placeholder="415-555-0123" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-3 columns">
+			<label for="message" class="right inline">Message</label>
+		</div>
+		<div class="small-9 columns">
+			<textarea id="message" name="message"></textarea>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-3 columns">
+			<label for="priority" class="right inline">I need a response</label>
+		</div>
+		<div class="small-9 columns">
+			<select id="priority" name="priority">
+				<option value="urgent">Within 1 hour</option>
+				<option value="normal">Within 24 hours</option>
+				<option value="not urgent">Within 3 days</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<input type="submit" value="Send" class="button small right" />
+		</div>
+	</div>	
+</form>
+
+</body>
+</html>
